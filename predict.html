@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>uniPredict-Predictor</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cssfile.css">
+        <link rel="stylesheet" href="C:\Users\TanviMore\Desktop\WebDevProject\css\bootstrap.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <a class="navbar-brand">uniPredict</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blogs.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./unis.html">Universities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./predict.html">University Predictor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./team.html">Team</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <br> </br><br /><br /> <br />
+          <section>
+              <h3 class="heading">University Predictor</h3> <br />
+              <p id="des">Get an elaborate list of Ambitious, Realistic and Safe Universities for Masters in the US based on your Profiles, Language Score & GRE Score using our unique University Predictor.</p>       
+          </section>
+          <div class="container" id="contact">
+              <form id="myForm">
+                      
+                  <div class="form-group">
+                      <label>GRE Scores:</label>
+                      <input class="form-control" id="nameInput" placeholder="Enter your GRE scores here" name="GRE" />
+                  </div>
+                  <br />
+
+                  <div class="form-group">
+                      <label>TOEFL/IELTS</label>
+                      <input class="form-control" id="nameInput" placeholder="Enter your language scores here" name="Language"/>
+                  </div>
+                  <br />
+
+                  <div class="form-group">
+                      <label>Undergraduation Score</label>
+                      <input class="form-control" id="nameInput" placeholder="Enter your undergraduation GPA here" name="CGPA"/>
+                  </div>
+                  <br />
+                  
+                  <div class="form-group">
+                      <label>Work Experience</label>
+                      <input class="form-control" id="nameInput" placeholder="Enter the duration of work experience you have" name="WorkExp"/>
+                  </div>
+                  <br />
+
+                  <label for="customRange1">SOP Rating:</label>
+                  <input type="range" class="custom-range" id="customRange1" name="SOP">
+                  <br />
+
+                  <label for="customRange1">LOR Rating:</label>
+                  <input type="range" class="custom-range" id="customRange1" name="LOR">
+                  <br />
+
+                  <label for="customRange1">Extracurricular Rating:</label>
+                  <input type="range" class="custom-range" id="customRange1" name="Extra">
+                  
+                  <br />
+                  <br />
+
+                  <button class="btn btn-outline-success me-2" type="button" onclick="SubForm()" id="sub">Submit</button>
+
+              </form>
+
+              <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script>
+
+        function SubForm(){
+            $.ajax({
+                url:'https://api.apispreadsheets.com/data/14796/',
+                type:'post',
+                data:$("#myForm").serializeArray(),
+                success: function(){
+                  alert("Form Data Submitted Successfully")
+                },
+                error: function(){
+                  alert("There was an error :(")
+                }
+            });
+        }
+
+        </script>
+          </div>
+    </body>
+</html>

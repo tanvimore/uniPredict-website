@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+body {
+    font-family: 'Benne', serif;
+    font-weight: 300px !important;
+    margin-top: 120px !important;
+    width: 1200px !important;
+    margin: auto !important;
+    background-color: whitesmoke;
+}
+
+#navbar {
+    border-bottom: 2px solid #000;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(148, 163, 245,0.4) !important;
+    top: 0px;
+    left: 0%;
+}
+
+.navbar-brand {
+    font-family: 'Benne', serif !important;
+    font-size: 40px !important;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#bgimg {
+    width: 100%;
+    height: 600px;
+    margin-top: 120px;
+}
+
+.submenu {
+    list-style:none;
+    font-size: smaller;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+    padding: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin-top: 24;
+    text-decoration: none;
+    width: 150px;
+    margin-right: 10px;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.submenu.active {
+    display: block;
+}
+
+.submenu.inactive {
+    display: none;
+}
+
+.submenu a{
+    display: block;
+    padding: 5%;
+    color: black;
+    text-shadow: none;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.submenu a:hover{
+    background-color: rgba(255, 20, 20, 0.4);
+}
+
+body h1 {
+    font-weight: lighter;
+    margin: 40px 30px;
+    font-family: 'Benne', serif;
+    font-size: 20px;
+}   
+
+.heading {
+    font-family: 'Benne', serif !important;
+    font-size: xx-large;
+    margin: auto !important;
+}
+
+
+.heading:hover{
+    color: rgb(255, 0, 0);
+}
+
+.my-input, .my-textarea {
+    display: block;
+    width: 65%;
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    resize: none;
+}
+
+#context {
+    display: none;
+}
+
+.context-menu a.hidden {
+    display: none;
+}
+
+.context-menu {
+    display: inline-block;
+    position: absolute;
+    background: whitesmoke;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    list-style: none !important;
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+}
+
+.context-menu a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.context-menu a:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.my-input:focus, .my-textarea:focus {
+    background-color: rgba(255, 127, 80, 0.2);
+    color: rgba(210,40,40, 0.7);
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0 ,0, 0.5);
+}
+
+.text1 {
+    display: block;
+    padding: 10px 20px;
+    margin: auto;
+    width: 85%;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    resize: none;
+}
+
+.arthead {
+    font-size: medium;
+}
+
+p {
+    font-size: smaller;
+    color: rgba(0, 0 ,0, 0.8);
+}
+
+#top-stories {
+    width:1000px;    
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+article:hover {
+    box-shadow: 5px 5px 20px rgba(18, 0, 0, 0.5);
+    background-color:rgba(255, 25, 25, 0.5); 
+}
+
+article:active {
+    opacity: 0.6;
+}
+
+.us {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0) !important;
+    border: 1px solid rgba(0, 0 ,0, 0) !important;
+    text-align:center !important;
+    border-radius: 0px 0px !important;
+    border-radius: 100% !important;
+    width: 200;
+    margin-left: 65px;
+}
+
+#pic {
+    margin-bottom: 15px;
+}
+
+#team {
+    margin-left: 30px;
+}
+
+article {
+    max-width: 23.5%;
+    display: inline-block;
+    border: 1px solid rgba(0, 0 ,0, 0.5);
+    padding: 5px;
+    margin: 2px;
+    margin-left:0%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px;
+    transition: box-shadow 500ms, background-color 2s;
+    transition-delay: 200ms;
+}
+
+
+article img {
+    width: 100%;
+    background-position: center !important;
+    border-radius: 0px 0px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+
+
+
+.article-image:hover {
+    box-shadow: 5px 5px 10px rgba(18, 0, 0, 0.5);
+}
+
+.my-text {
+    max-width: 99%;
+    margin-top: 10px;
+    max-height: 150px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid rgba(0, 0 ,0, 0.5);
+}
+
+.profile-menu {
+    list-style: none;
+    float: right;
+    margin-top: 58px;
+}
+
+.profile-menu a {
+    padding:20px;
+}
+
+#myform {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.form-control:hover {
+    background-color: rgba(0, 0, 100, 0.2);
+}
+
+#customRange1 {
+    width: 100%;
+}
+
+#sub {
+    margin-left: 45%;
+}
+
+#des {
+    font-size: larger;
+    color: rgba(0, 0 ,0, 0.8);
+}
+
